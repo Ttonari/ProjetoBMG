@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Alunos</title>
+    <link rel="stylesheet" type="text/css" href="../static/cadastrar.css">
+
+</head>
+<body>
+
+    <div>
+		<a class="setinha" href="{{ url_for('home') }}">
+		<img class="img" src="http://localhost:8000/img/pngegg.png">
+		</a>
+	</div>
+
+    <nav>
+        <div >
+			<a id="botao1" href="{{ url_for('planos') }}">SEUS PLANOS</a>
+			<a id="botao2" href="{{ url_for('alunos') }}">VER ALUNOS</a>
+			<a id="botao3" href="{{ url_for('despesas') }}">GERENCIAR DESPESAS</a>
+		</div>
+
+        <div id="container">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+				<div class="flash_login">
+					{%for msg in messages %}
+						{{ msg }}
+					{% endfor %}
+				</div>
+            {% endif %}
+        {% endwith %}
+
+            <form  action="/cadastrando" method="post">
+                <div>
+                    <input class="grande" type="text" name="nome" id="nomecompleto" placeholder="NOME COMPLETO" required>
+                </div>
+                <div>
+                    <input class="esquerdo" type="text" name="cpf" id="cpf" placeholder="CPF">
+                </div>
+                <div>
+                    <input class="direito" type="text" name="telefone" id="telefone" placeholder="N DE CELULAR" required>
+                </div>
+
+                <div>
+                    <input class="grande" type="email" name="email" id="email" placeholder="EMAIL" required>
+                </div>
+
+                <div>
+                    <input class="esquerdo" type="date" name="nascimento" id="nascimento" placeholder="DD/MM/AA" required>
+                </div>
+                <div>
+                    <input class="direito" type="text" name="pagamento" id="pagamento" placeholder="METODO DE PAGAMENTO" required>
+                </div>
+                <div>
+                    <select class="esquerdo" name="plano" id="plano">
+                        {% for plano in planos %}
+                         <option value="{{ plano.nome_plano }}">{{ plano.nome_plano }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <input class="direito" type="date" name="datadeinicio" id="datadeinicio" placeholder="DATA DE INICIO">
+                </div>
+
+
+
+                <div>
+                    <input class="submit" type="submit" name="" value="CADASTRAR">
+                </div>
+
+            </form>
+
+        </div>
+    </nav>
+
+</body>
+</html>

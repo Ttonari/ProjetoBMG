@@ -1,0 +1,118 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #272727;
+	background-size: cover;
+}
+
+#container {
+	width: 664px;
+	height: 555px;
+	background-color:#404040;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#container img {
+	width: 220px;
+	height: 220px;
+	margin-top: -110px;
+	margin-bottom: 30px;
+}
+
+input {
+	color: #000000;;
+	height: 60px;
+	width: 80%;
+	background-color: #fff;
+	padding-left: 10px;
+	margin: 50px;
+	border-radius: 10px;
+	border: none;
+	background: #6AC89B;
+	box-shadow: -11px 12px 6px rgba(0, 0, 0, 0.25);
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: 0.07em;
+}
+
+
+input.submit {
+	color: #000000;
+	background-color: #D9D9D9;
+	border: 2px solid #db7d00;
+	padding: 5px 20px;
+	height: 75px;
+	width: 30%;
+	cursor: pointer;
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 36px;
+	letter-spacing: -0.02em;
+
+
+
+}
+
+input.senha:hover, input.usuario:hover {
+	background-color: #BBF0D7;
+}
+
+input.submit:hover, input.esqueci:hover {
+	background-color: #93E9C1;
+}
+
+input.esqueci {
+	height: 45px;
+	width: 25%;
+	background-color: #e9e9e9;
+	margin-right: -400px;
+	margin-top: -5px;
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 38px;
+	letter-spacing: 0.07em;
+	opacity: 0.35;
+	cursor: pointer;
+
+}
+
+h1 {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 100px;
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 120px;
+	line-height: 144px;
+	letter-spacing: 0.085em;
+
+	color: #FFFFFF;
+}
+
+.flash_login{
+    color: #ffffff;
+    background-color: #6AC89B;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+}

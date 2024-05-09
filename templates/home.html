@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="../static/home.css">
+</head>
+<body onload="startTime()">
+
+{% with messages = get_flashed_messages() %}
+            {% if messages %}
+				<div class="flash_login">
+					{%for msg in messages %}
+						{{ msg }}
+					{% endfor %}
+				</div>
+            {% endif %}
+        {% endwith %}
+
+	<header>
+		<div id="container">
+
+			<div id="imagem">
+				<img src="http://localhost:8000/img/homeicon.png">
+
+			</div>
+		</div>
+			<ul>
+				<li class="nome" id="nome">BM GYM</li>
+				<li class="data" id="demo"></li>
+				<li class="hora" id="txt"></li>
+			</ul>
+			<a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+	</header>
+
+	<nav>
+
+		<div id="botao">
+			<a class="big" href="{{ url_for('planos') }}">SEUS PLANOS</a>
+		</div>
+
+		<div id="botao2">
+			<a class="big" href="{{ url_for('alunos') }}">VER ALUNOS</a>
+		</div>
+
+		<div id="botao3">
+			<a class="big" href="{{ url_for('despesas') }}">GERENCIAR DESPESAS</a>
+		</div>
+
+		<div id="botao4">
+			<a class="big" href="{{ url_for('cadastrar')}}">CADASTRAR ALUNOS</a>
+		</div>
+
+		<div id="botao5">
+			<a class="lil" href="{{ url_for('relatorios') }}">RELATORIO GERAL</a>
+		</div>
+		
+	</nav>
+
+	<footer>
+
+		<h1>{{ usuario }}</h1>
+
+		<a class="sup" href="{{ url_for('suporte') }}">SUPORTE</a>
+
+	</footer>
+
+
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m ;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #272727;
+	background-size: cover;
+}
+
+img.img{
+    width: 30%;
+    height: 30%;
+
+}
+
+a.setinha {
+
+	position: absolute;
+	left: 1%;
+	margin-left: -40px;
+	bottom: 88%;
+}
+
+#botao1 {
+
+	top: 15%;
+	left: 2%;
+	width: 350px;
+	height: 130px;
+	background-color: #585858;
+	border-radius: 74px;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+	margin-left: 20px;
+	position: absolute;
+	filter: drop-shadow(-21px 18px 4px rgba(0, 0, 0, 0.25));
+
+
+
+}
+
+#botao2 {
+	top: 37%;
+	left: 2%;
+	width: 350px;
+	height: 130px;
+	background-color: #585858;
+	border-radius: 74px;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+	margin-left: 20px;
+	position: absolute;
+	filter: drop-shadow(-21px 18px 4px rgba(0, 0, 0, 0.25));
+
+
+
+}
+
+#botao3 {
+	top: 59%;
+	left: 2%;
+	width: 350px;
+	height: 130px;
+	background-color: #585858;
+	border-radius: 74px;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+	margin-left: 20px;
+	position: absolute;
+	filter: drop-shadow(-21px 18px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.botoes:hover {
+
+
+	color: #6AC89B;
+	font-family: Agency FB;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+}
+
+.botoes {
+
+	margin-top: 20px;
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#container {
+    width: 28%;
+    height: 70%;
+    background: #272727;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    border: 4px solid #6AC89B;
+    overflow-y: auto;
+}
+
+#container2 {
+    position: absolute ;
+	width: 23%;
+	height: 60%;
+	background-color:#404040;
+	text-align: center;
+	border-radius: 12px;
+    left: 70%;
+    top: 25%;
+    box-shadow: -15px 12px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+input {
+	color: #000000;;
+	height: 60px;
+	width: 70%;
+	background-color: #fff;
+	padding-left: 10px;
+	margin: 30px;
+	border-radius: 10px;
+	border: none;
+	background: #6AC89B;
+	box-shadow: -11px 12px 6px rgba(0, 0, 0, 0.25);
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: 0.07em;
+}
+
+
+input.submit {
+	color: #FFFFFF;
+	background-color: #11a54a;
+	border: 2px solid #6AC89B;
+	padding: AUTO;
+	height: 3em;
+	width: 30%;
+	cursor: pointer;
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 36px;
+	letter-spacing: -0.02em;
+
+
+
+}
+
+input.submit:hover, input:hover {
+	background-color: #93E9C1;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #FFF;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #6AC89B;
+
+}
+
+th {
+    background-color: #6AC89B;
+}
+
+tr:nth-child(even) {
+    background-color: #585858;
+}
+.deletar-despesa {
+    display: inline-block;
+    color: #FFF; /* Cor do texto do botão */
+    text-decoration: none; /* Remova a decoração de texto padrão para links */
+    padding: 5px 8px; /* Ajuste o espaçamento interno do botão (topo/baixo, esquerda/direita) */
+    background-color: #585858; /* Cor de fundo do botão */
+    border-radius: 5px; /* Borda arredondada */
+    margin-right: 20px; /* Espaçamento à direita para separar do conteúdo anterior */
+    font-size: 18px; /* Ajuste o tamanho da fonte */
+
+}
+.deletar-despesa:hover {
+	color: #6AC89B;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seus Planos</title>
+	<link rel="stylesheet" type="text/css" href="../static/cadastrar_plano.css">
+</head>
+<body>
+
+    <div>
+    	<a href="{{ url_for('planos') }}">
+        <img class="img" src="http://localhost:8000/img/pngegg.png">
+    	</a>
+    </div>  
+
+	<div id="container">
+	 {% with messages = get_flashed_messages() %}
+            {% if messages %}
+				<div class="flash_login">
+					{%for msg in messages %}
+						{{ msg }}
+					{% endfor %}
+				</div>
+            {% endif %}
+        {% endwith %}
+
+		<form  action="/cadastrando_plano" method="post">
+			<div>
+				<input class="nome do plano" type="text" name="nome_plano" id="nome do plano" placeholder="NOME DO PLANO">
+			</div>
+
+			<div>
+				<input class="tempo de duração" type="text" name="tempo_plano" id="tempo de duracao" placeholder="TEMPO DE DURAÇÃO">
+			</div>
+
+            <div>
+				<input class="valor do plano" type="number" name="valor_plano" id="valor do plano" placeholder="VALOR DO PLANO" step="any">
+			</div>
+
+			<div>
+				<input class="submit" type="submit" name="" value="CADASTRAR">
+			</div>
+
+		</form>
+		
+	</div>
+
+</body>
+</html>

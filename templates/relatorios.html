@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/relatorios.css">
+</head>
+<body>
+
+    <div>
+		<a href="{{ url_for('home') }}">
+		<img class="img" src="http://localhost:8000/img/pngegg.png">
+		</a>
+	</div>
+
+    <div id="container">
+        <h1 class="container">Total Despesas: {{ total_despesas }}</h1>
+    </div>
+
+    <div id="container2">
+        <h1 class="container">Total Planos: {{ total_planos_clientes }}</h1>
+    </div>
+
+    <div id="container3"></div>
+
+    <div id="container4"></div>
+
+    <div id="inline-picker"></div>
+
+    <h1 class="saldo">
+        SEU SALDO: {{saldo_total}}
+    </h1>
+    <script>
+
+
+    </script>
+</body>
+</html>

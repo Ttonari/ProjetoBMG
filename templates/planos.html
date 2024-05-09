@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seus Planos</title>
+	<link rel="stylesheet" type="text/css" href="../static/planos.css">
+</head>
+<body>
+
+	<div>
+		<a class="setinha" href="{{ url_for('home') }}">
+		<img class="img" src="http://localhost:8000/img/pngegg.png">
+		</a>
+	</div>
+
+	<h1>CLIQUE PARA ADICIONAR UM PLANO</h1>
+
+	<nav>
+		<div >
+			<a id="botao1" href="{{ url_for('cadastrar') }}">CADASTRAR ALUNOS</a>
+			<a id="botao2" href="{{ url_for('alunos') }}">VER ALUNOS</a>
+			<a id="botao3" href="{{ url_for('despesas') }}">GERENCIAR DESPESAS</a>
+		</div>
+
+		<div>
+        	<a id="quadrado" href="{{ url_for('cadastrar_plano') }}">+</a>
+		</div>
+		 <div id="container">
+        <h2>Lista de Planos Cadastrados</h2>
+        <ul id="lista-planos">
+            {% for plano in planos %}
+                <li>
+                    <span>Nome:</span> {{ plano.nome_plano }}  <br>
+                    <span>Valor:</span> R$ {{ plano.valor_plano }}
+					<a href="{{url_for('editar_plano', id=plano.id)}}"> edita plano</a>
+					<a href="{{url_for('deletar_plano', id=plano.id)}}"> excluir plano</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+	</nav>
+
+</body>
+</html>

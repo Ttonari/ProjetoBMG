@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Despesas</title>
+    <link rel="stylesheet" type="text/css" href="../static/despesas.css">
+</head>
+<body>
+
+    <div>
+		<a class="setinha" href="{{ url_for('home') }}">
+		<img class="img" src="http://localhost:8000/img/pngegg.png">
+		</a>
+	</div>
+
+    <nav>
+        <div>
+            <a class="botoes" id="botao1" href="{{ url_for('planos') }}">SEUS PLANOS</a>
+            <a class="botoes" id="botao2" href="{{ url_for('cadastrar') }}">CADASTRAR ALUNOS</a>
+            <a class="botoes" id="botao3" href="{{ url_for('alunos') }}">VER ALUNOS</a>
+
+            </div>
+
+            <div id="container">
+                <table class="table table-striped table-responsive table-bordered">
+                <thead class="thead-default">
+                 <tr>
+                    <th style="color: #000">Nome</th>
+                    <th style="color: #000">valor</th>
+                    <th style="color: #000">vencimento</th>
+                     <th>Ação</th>
+                 </tr>
+                 </thead>
+                {% for despesa in despesas %}
+                <tr>
+                    <td style="color: #FFF">{{ despesa.nome_despesa }}</td>
+                    <td style="color: #FFF">{{ despesa.valor_despesa}}</td>
+                    <td style="color: #FFF">{{ despesa.vencimento_despesa }}</td>
+                    <td><a class="deletar-despesa" href="{{url_for('deletar_despesa', id=despesa.id)}}"> excluir</a></td>
+                </tr>
+                 {% endfor %}
+                    </table>
+                </div>
+
+
+            <div id="container2">
+
+
+                <form action="/cadastrando_despesas" method="post">
+                    <div>
+                        <input class="nome do plano" type="text" name="nome_despesa" id="nome do plano" placeholder="NOME" required>
+                    </div>
+        
+                    <div>
+                        <input class="valor" type="number" name="valor_despesa" id="valor" placeholder="VALOR" required step="any">
+                    </div>
+        
+                    <div>
+                        <input class="valor do plano" type="text" name="vencimento_despesa" id="valor do plano" placeholder="VENCIMENTO" required>
+                    </div>
+        
+                    <div>
+                        <input class="submit" type="submit" name="" value="ADICIONAR">
+                    </div>
+        
+                </form>
+                
+            </div>
+    </nav>
+</body>
+</html>

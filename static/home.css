@@ -1,0 +1,292 @@
+body {
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #272727;
+	background-size: cover;
+}
+
+header {
+
+	height: 128px;
+	width: 98%;
+	background-color: #6AC89B;
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 15px ;
+    display: flex;
+    align-items: center;
+}
+
+#container img {
+
+	margin-top: 10px;
+	margin-left: 27px;
+
+}
+
+header li {
+
+
+	display: flex;
+	justify-content: center;
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 5.6px;
+	list-style-type: none ;
+	margin-top: -10px;
+	min-width: 400px;
+}
+
+header ul {
+
+
+
+	display: flex;
+	margin-left: 20px ;
+	gap: 20px;
+}
+
+#botao {
+
+	position: absolute;
+	top: 30%;
+	left: 17%;
+	width: 400px;
+	height: 132px;
+	background-color: #585858;
+	border-radius: 74px;
+	justify-content: center;
+	display: flex;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+}
+
+#botao2 {
+
+	position: absolute;
+	top: 30%;
+	left: 57%;
+	width: 400px;
+	height: 132px;
+	background-color: #585858;
+	border-radius: 74px;
+	justify-content: center;
+	display: flex;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+}
+
+#botao3 {
+
+	position: absolute;
+	top: 60%;
+	left: 17%;
+	width: 400px;
+	height: 132px;
+	background-color: #585858;
+	border-radius: 74px;
+	justify-content: center;
+	display: flex;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+}
+
+#botao4 {
+
+	position: absolute;
+	top: 60%;
+	left: 57%;
+	width: 400px;
+	height: 132px;
+	background-color: #585858;
+	border-radius: 74px;
+	justify-content: center;
+	display: flex;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+}
+
+#botao5 {
+
+	position: absolute;
+	top: 85%;
+	left: 42%;
+	width: 246px;
+	height: 72px;
+	background-color: #585858;
+	border-radius: 74px;
+	justify-content: center;
+	display: flex;
+	border-width: 4px;
+	border-color: #6AC89B;
+	border-style: solid;
+}
+
+a.big {
+
+	margin-top: 42px;
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+}
+
+a.lil {
+
+	margin-top: 17px;
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 2.24px;
+	text-decoration: none;
+}
+
+a.big:hover {
+
+	margin-top: 45px;
+	color: #6AC89B;
+	font-family: Agency FB;
+	font-size: 41px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+}
+
+a.lil:hover {
+
+	margin-top: 17px;
+	color: #6AC89B;
+	font-family: Agency FB;
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 2.24px;
+	text-decoration: none;
+}
+
+h1 {
+
+	bottom: 1%;
+	left: 2%;
+	position: absolute;
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+}
+
+a.sup {
+
+	color: #FFF;
+	font-family: Agency FB;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 4%;
+	right: 2%;
+
+}
+
+a.sup:hover {
+
+	color: #6AC89B;
+	font-family: Agency FB;
+	font-size: 51px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3.5px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 4%;
+	right: 2%;
+
+}
+
+#txt{
+	position: absolute;
+	left: 72%;
+	font-size: 75px;
+}
+
+#demo {
+	position: absolute;
+	font-size: 70px;
+	left: 36%;
+}
+.flash_login {
+    color: #ffffff;
+    background-color: #6AC89B;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInOut 3s linear 1s forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+.logout-button {
+    display: inline-block;
+    margin-left: auto; /* Isso move o botão para a extremidade direita */
+    color: #FFF; /* Cor do texto do botão */
+    text-decoration: none; /* Remova a decoração de texto padrão para links */
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color:#585858; /* Cor de fundo do botão */
+    border-radius: 5px; /* Borda arredondada */
+    margin-right: 20px; /* Espaçamento à direita para separar do conteúdo anterior */
+}
+
+
+
+
+
+
+
+
+
+
+
+

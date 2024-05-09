@@ -1,0 +1,83 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #272727;
+	background-size: cover;
+}
+
+img.img{
+    width: 5%;
+    height: 5%;
+    margin: 10px;
+}
+
+#container {
+	position: absolute;
+	width: 35%;
+	height: 60%;
+	background-color:#404040;
+	text-align: center;
+	border-radius: 12px;
+	left: 34%;
+	top: 20%;
+
+}
+
+
+
+input {
+	color: #000000;;
+	height: 60px;
+	width: 80%;
+	background-color: #fff;
+	padding-left: 10px;
+	margin: 30px;
+	border-radius: 10px;
+	border: none;
+	background: #6AC89B;
+	box-shadow: -11px 12px 6px rgba(0, 0, 0, 0.25);
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: 0.07em;
+}
+
+
+input.submit {
+	position: absolute;
+	color: #FFFFFF;
+	background-color: #2F2F2F;
+	border: 2px solid #6AC89B;
+	padding: 4px;
+	height: 13%;
+	width: 27%;
+	cursor: pointer;
+	left: 30%;
+	bottom: 5%;
+	min-height: 14%;
+
+	font-family: 'Agency FB';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: -0.02em;
+
+
+
+}
+
+input.submit:hover, input.esqueci:hover {
+	background-color: #93E9C1;
+}
+.flash_login{
+    color: #ffffff;
+    background-color: #6AC89B;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
